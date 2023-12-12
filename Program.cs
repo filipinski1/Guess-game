@@ -9,6 +9,7 @@ namespace GuessTheNumberGame
         private int guessesLimitHardLevel;
         private int guessesLimitMediumLevel;
 
+
         public int Level { get; set; }
         public string Mode { get; set; }
         public int Limit { get; set; }
