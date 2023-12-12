@@ -29,7 +29,23 @@ namespace GuessTheNumberGame
             {
                 timeLimitHardLevel = timeLimitHardLevelValue;
             }
+
+            if (!string.IsNullOrEmpty(timeLimitMediumLevelStr) && int.TryParse(timeLimitMediumLevelStr, out int timeLimitMediumLevelValue))
+            {
+                timeLimitMediumLevel = timeLimitMediumLevelValue;
+            }
+
+            if (!string.IsNullOrEmpty(guessesLimitHardLevelStr) && int.TryParse(guessesLimitHardLevelStr, out int guessesLimitHardLevelValue))
+            {
+                guessesLimitHardLevel = guessesLimitHardLevelValue;
+            }
+
+            if (!string.IsNullOrEmpty(guessesLimitMediumLevelStr) && int.TryParse(guessesLimitMediumLevelStr, out int guessesLimitMediumLevelValue))
+            {
+                guessesLimitMediumLevel = guessesLimitMediumLevelValue;
+            }
         }
+    
 
         public void ChooseGameLevel()
         {
